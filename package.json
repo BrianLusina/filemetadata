@@ -1,5 +1,4 @@
 {
-
   "name": "filemetadata",
   "version": "0.0.1",
   "description": "A simple file metadata microservice",
@@ -8,7 +7,9 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "pug": "^0.1.0",
+    "multer": "^1.3.0"
   },
   "engines": {
     "node": "8.x"
