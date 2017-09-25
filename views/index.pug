@@ -12,19 +12,20 @@ html
   
   body
       header
-        h1 A simple file metadata microservice
+        h1 A very simple file metadata microservice
       
       main
         p(class="bold") Hi there
         p Give me a file and I tell you its size.
       
-      form
-        input(type="text")
-        button(type="submit") Submit
+      form(action="/filemetadata" method="POST" enctype="multipart/form-data")
+        input(type="file" name="file" id="file")
+        input(type="submit")
+      
+      br
       
       footer
         a(href="https://github.com/BrianLusina" target="_blank") Made by The Lusina
       
       script(src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
       crossorigin="anonymous")
-      script(src="/client.js")
