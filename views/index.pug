@@ -1,0 +1,31 @@
+- var title = "File Metadata"
+doctype html
+html
+  head
+    title #{title}
+    meta(name="description" content="file metadata microservice")
+    link(id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon")
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width" initial-scale=1)
+    link(rel=styelsheet href="style.css")
+  
+  body
+      header
+        h1 A very simple file metadata microservice
+      
+      main
+        p(class="bold") Hi there
+        p Give me a file and I tell you its size.
+      
+      form(action="/filemetadata" method="POST" enctype="multipart/form-data")
+        input(type="file" name="file" id="file")
+        input(type="submit")
+      
+      br
+      
+      footer
+        a(href="https://github.com/BrianLusina" target="_blank") Made by The Lusina
+      
+      script(src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+      crossorigin="anonymous")
